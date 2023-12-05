@@ -5,7 +5,7 @@ function App() {
     <main className="flex justify-center items-center h-screen font-poppins bg-[#F0F0F0]">
       <div className="flex flex-col bg-white p-14 rounded-3xl gap-8">
         <div className="flex  gap-8">
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-[0.5rem]">
             <label
               className="text-[#716F6F] tracking-[0.21875rem] font-poppins text-[0.875rem] font-bold"
               htmlFor=""
@@ -13,12 +13,13 @@ function App() {
               DAY
             </label>
             <Input
-              className="w-[10rem] h-[4.5rem] placeholder:text-[rgba(21, 21, 21, 0.5)] placeholder:text-[2rem] font-bold"
+              className="placeholder:text-[rgba(21, 21, 21, 0.5)] placeholder:text-[2rem] font-bold"
               placeholder="DD"
             />
+           
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-[0.5rem]">
             <label
               className="text-[#716F6F] tracking-[0.21875rem] font-poppins text-[0.875rem] font-bold"
               htmlFor=""
@@ -26,12 +27,12 @@ function App() {
               MONTH
             </label>
             <Input
-              className=" w-[10rem] h-[4.5rem] placeholder:text-[rgba(21, 21, 21, 0.5)] placeholder:text-[2rem] font-bold"
+             className="placeholder:text-[rgba(21, 21, 21, 0.5)] placeholder:text-[2rem] font-bold"
               placeholder="MM"
             />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-[0.5rem]">
             <label
               className="text-[#716F6F] tracking-[0.21875rem] font-poppins text-[0.875rem] font-bold"
               htmlFor=""
@@ -39,7 +40,7 @@ function App() {
               YEAR
             </label>
             <Input
-              className="w-[10rem] h-[4.5rem] placeholder:text-[rgba(21, 21, 21, 0.5)] placeholder:text-[2rem] font-bold"
+             className="placeholder:text-[rgba(21, 21, 21, 0.5)] placeholder:text-[2rem] font-bold"
               placeholder="YYYY"
             />
           </div>
