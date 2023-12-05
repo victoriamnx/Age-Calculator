@@ -12,11 +12,7 @@ function App() {
             >
               DAY
             </label>
-            <Input
-              className="placeholder:text-[rgba(21, 21, 21, 0.5)] placeholder:text-[2rem] font-bold"
-              placeholder="DD"
-            />
-           
+            <Input placeholder="DD" />
           </div>
 
           <div className="flex flex-col gap-[0.5rem]">
@@ -26,10 +22,7 @@ function App() {
             >
               MONTH
             </label>
-            <Input
-             className="placeholder:text-[rgba(21, 21, 21, 0.5)] placeholder:text-[2rem] font-bold"
-              placeholder="MM"
-            />
+            <Input placeholder="MM" />
           </div>
 
           <div className="flex flex-col gap-[0.5rem]">
@@ -39,10 +32,7 @@ function App() {
             >
               YEAR
             </label>
-            <Input
-             className="placeholder:text-[rgba(21, 21, 21, 0.5)] placeholder:text-[2rem] font-bold"
-              placeholder="YYYY"
-            />
+            <Input placeholder="YYYY" />
           </div>
         </div>
 
