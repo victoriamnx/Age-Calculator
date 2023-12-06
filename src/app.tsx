@@ -183,7 +183,7 @@ function App() {
           </div>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-2">
           <div className="flex gap-2">
             <h1 className="text-[#854DFF] font-poppins italic font-bold text-8xl">
               {yearsResult}
