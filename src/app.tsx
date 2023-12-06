@@ -81,8 +81,8 @@ function App() {
 
   return (
     <main className="flex justify-center items-center h-screen font-poppins bg-[#F0F0F0]">
-      <div className="flex flex-col bg-white p-14 rounded-t-[1.5rem] rounded-bl-[1.5rem] rounded-br-[12.5rem]">
-        <div className="flex gap-8">
+      <div className="flex flex-col bg-[white] p-14 rounded-t-[1.5rem] rounded-bl-[1.5rem] rounded-br-[12.5rem]">
+        <div id="inputs" className="flex gap-8">
           <div
             className={`flex flex-col gap-[0.5rem] ${dayError ? "error" : ""}`}
           >
@@ -146,7 +146,7 @@ function App() {
           </div>
         </div>
 
-        <div className="flex items-center">
+        <div id="divisor" className="flex items-center">
           <div className="flex h-px w-[39.5rem] bg-[#DCDCDC] "></div>
           <div
             className={`svg-container ${
@@ -183,7 +183,7 @@ function App() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div id="results" className="flex flex-col gap-2">
           <div className="flex gap-2">
             <h1 className="text-[#854DFF] font-poppins italic font-bold text-8xl">
               {yearsResult}
