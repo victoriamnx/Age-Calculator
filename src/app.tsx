@@ -81,8 +81,8 @@ function App() {
 
   return (
     <main className="flex justify-center items-center h-screen font-poppins bg-[#F0F0F0]">
-      <div className="flex flex-col bg-[white] p-14 rounded-t-[1.5rem] rounded-bl-[1.5rem] rounded-br-[12.5rem]">
-        <div id="inputs" className="flex gap-8">
+      <div className="flex flex-col bg-[white] max-[700px]:px-[1.5rem] max-[700px]:py-[3rem] max-[700px]:gap-[2rem] p-[3.5rem] rounded-t-[1.5rem] rounded-bl-[1.5rem] max-[700px]:rounded-br-[6.25rem] rounded-br-[12.5rem]">
+        <div id="inputs" className="flex max-[700px]:gap-[1rem] gap-[2rem]">
           <div
             className={`flex flex-col gap-[0.5rem] ${dayError ? "error" : ""}`}
           >
@@ -146,8 +146,8 @@ function App() {
           </div>
         </div>
 
-        <div id="divisor" className="flex items-center">
-          <div className="flex h-px w-[39.5rem] bg-[#DCDCDC] "></div>
+        <div id="divisor" className="flex justify-center items-center">
+          <div className="flex max-[700px]:w-[115.5px] h-px w-[39.5rem] bg-[#DCDCDC] "></div>
           <div
             className={`svg-container ${
               hovered ? "hovered" : ""
@@ -156,6 +156,7 @@ function App() {
             onMouseLeave={() => setHovered(false)}
           >
             <svg
+              className="max-[700px]:w-[4rem] max-[700px]:h-[4rem]"
               width="96"
               height="96"
               viewBox="0 0 96 96"
@@ -181,26 +182,33 @@ function App() {
               />
             </svg>
           </div>
+          <div className="flex max-[700px]:w-[115.5px] h-px w-[0rem] bg-[#DCDCDC] "></div>
         </div>
 
         <div id="results" className="flex flex-col gap-2">
           <div className="flex gap-2">
-            <h1 className="text-[#854DFF] font-poppins italic font-bold text-8xl">
+            <h1 className="max-[700px]:text-[3.5rem] text-8xl text-[#854DFF] font-poppins italic font-bold ">
               {yearsResult}
             </h1>
-            <h2 className="text-8xl italic font-poppins font-[800]">years</h2>
+            <h2 className="max-[700px]:text-[3.5rem] text-8xl italic font-poppins font-[800]">
+              years
+            </h2>
           </div>
           <div className="flex gap-2">
-            <h1 className="text-[#854DFF] font-poppins italic font-bold text-8xl">
+            <h1 className="max-[700px]:text-[3.5rem] text-8xl text-[#854DFF] font-poppins italic font-bold ">
               {monthsResult}
             </h1>
-            <h2 className="text-8xl font-poppins italic font-[800]">months</h2>
+            <h2 className="max-[700px]:text-[3.5rem] text-8xl font-poppins italic font-[800]">
+              months
+            </h2>
           </div>
           <div className="flex gap-2">
-            <h1 className="text-[#854DFF] font-poppins italic font-bold text-8xl">
+            <h1 className="max-[700px]:text-[3.5rem] text-8xl text-[#854DFF] font-poppins italic font-bold ">
               {daysResult}
             </h1>
-            <h2 className="text-8xl font-poppins italic font-[800]">days</h2>
+            <h2 className="max-[700px]:text-[3.5rem] text-8xl font-poppins italic font-[800]">
+              days
+            </h2>
           </div>
         </div>
       </div>
