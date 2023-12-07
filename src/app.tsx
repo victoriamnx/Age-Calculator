@@ -88,19 +88,25 @@ function App() {
           >
             <label
               className={`text-[#716F6F] tracking-[0.21875rem] font-poppins text-[0.875rem] font-bold ${
-                dayError ? "error" : ""
+                dayError ? "text-[#FF5959]" : ""
               }`}
               htmlFor=""
             >
               DAY
             </label>
             <Input
+              className={` ${dayError ? "border-[#FF5959]" : ""}`}
+              type="number"
               placeholder="DD"
               value={dayValue}
               onChange={(e) => setDayValue(e.target.value)}
               onBlur={validateDay}
             />
-            {dayError && <span className="error-message">{dayError}</span>}
+            {dayError && (
+              <span className="text-[#FF5959] text-[0.875rem] italic">
+                {dayError}
+              </span>
+            )}
           </div>
 
           <div
@@ -110,19 +116,25 @@ function App() {
           >
             <label
               className={`text-[#716F6F] tracking-[0.21875rem] font-poppins text-[0.875rem] font-bold ${
-                monthError ? "error" : ""
+                monthError ? "text-[#FF5959]" : ""
               }`}
               htmlFor=""
             >
               MONTH
             </label>
             <Input
+              className={` ${dayError ? "border-[#FF5959]" : ""}`}
+              type="number"
               placeholder="MM"
               value={monthValue}
               onChange={(e) => setMonthValue(e.target.value)}
               onBlur={validateMonth}
             />
-            {monthError && <span className="error-message">{monthError}</span>}
+            {monthError && (
+              <span className="text-[#FF5959] text-[0.875rem] italic">
+                {monthError}
+              </span>
+            )}
           </div>
 
           <div
@@ -130,19 +142,25 @@ function App() {
           >
             <label
               className={`text-[#716F6F] tracking-[0.21875rem] font-poppins text-[0.875rem] font-bold ${
-                yearError ? "error" : ""
+                yearError ? "text-[#FF5959]" : ""
               }`}
               htmlFor=""
             >
               YEAR
             </label>
             <Input
+              className={` ${dayError ? "border-[#FF5959]" : ""}`}
+              type="number"
               placeholder="YYYY"
               value={yearValue}
               onChange={(e) => setYearValue(e.target.value)}
               onBlur={validateYear}
             />
-            {yearError && <span className="error-message">{yearError}</span>}
+            {yearError && (
+              <span className="text-[#FF5959] text-[0.875rem] italic">
+                {yearError}
+              </span>
+            )}
           </div>
         </div>
 
