@@ -73,9 +73,9 @@ function App() {
       setMonthsResult(`${monthsDiff}`);
       setDaysResult(`${daysDiff}`);
     } else {
-      setYearsResult("--");
-      setMonthsResult("--");
-      setDaysResult("--");
+      setYearsResult("- -");
+      setMonthsResult("- -");
+      setDaysResult("- -");
     }
   };
 
